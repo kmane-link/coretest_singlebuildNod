@@ -47,7 +47,7 @@ build:
   post_ci:
  
     
-    - docker push quay.io/revathird/samplenode_test
+    - docker push quay.io/revathird/docker
   
 integrations:
   hub:
