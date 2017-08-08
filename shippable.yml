@@ -22,13 +22,13 @@ env:
 build:
   pre_ci:
   #Testing for pre_ci carrying over to pre_ci_boot
-    - docker build -t=quay.io/revathird/docker:tagaug  .
+    - docker build -t=quay.io/revathird/testnodeimg   .
   
    
     
   pre_ci_boot:
-    image_name: quay.io/revathird/docker 
-    image_tag: master.14
+    image_name: quay.io/revathird/docker
+    image_tag: officialimgtag
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false' 
 
@@ -47,13 +47,13 @@ build:
   post_ci:
  
     
-    - docker push quay.io/revathird/docker:tagaug
+    - docker push quay.io/revathird/testnodeimg 
   
 integrations:
   hub:
 
   #Quay.io integration    
-    - integrationName: ship-quay
+    - integrationName: ship-dtr
       type: quay.io
       
           
