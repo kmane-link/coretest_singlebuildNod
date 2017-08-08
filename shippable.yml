@@ -27,8 +27,8 @@ build:
    
     
   pre_ci_boot:
-    image_name: 742038439709.dkr.ecr.us-west-2.amazonaws.com/sample_node
-    image_tag: latest
+    image_name: 742038439709.dkr.ecr.us-east-1.amazonaws.com/sample_php
+    image_tag: officialimgtag 
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false' 
 
