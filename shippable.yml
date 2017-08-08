@@ -54,7 +54,7 @@ integrations:
 
   #Quay.io integration    
     - integrationName: ship-dtr
-      type: quay.io
+      type: Docker Trusted Registry
       
           
     
