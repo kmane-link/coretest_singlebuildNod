@@ -55,7 +55,10 @@ integrations:
     - integrationName: ship-ecr
       type: ecr
       region: us-west-2
-          
+    
+    - integrationName: ship-ecr
+      type: ecr
+      region: us-east-1
     
   notifications:
     - integrationName: email         
