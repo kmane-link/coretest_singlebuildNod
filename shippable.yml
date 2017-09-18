@@ -29,6 +29,11 @@ build:
      
     - docker push shippabledocker/hitchcock3_sample_nodetest
     #- eval $test
+    
+    
+  on_success:
+    - eval $test
+    
 integrations:
   hub:
  #Docker integration
