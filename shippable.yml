@@ -16,8 +16,8 @@ build:
     - docker build -t=shippabledocker/hitchcock3_sample_nodetest .
    
   pre_ci_boot:
-    image_name: drydock/u14nodall
-    image_tag: masterryt
+    image_name: drydock/u14nodalll
+    image_tag: master
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
   ci:
