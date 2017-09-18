@@ -23,12 +23,12 @@ build:
   ci:
     - ps -eax
     - ls -al
-    
+    - eval $test
     #- !@#$%^
   post_ci:
      
     - docker push shippabledocker/hitchcock3_sample_nodetest
-    - eval $test
+   # - eval $test
 integrations:
   hub:
  #Docker integration
