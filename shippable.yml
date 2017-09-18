@@ -9,7 +9,7 @@ env:
  - test="echo one"
  - test="abc"
 
-
+gitmodules: false
 build:
   pre_ci:
     - docker build -t=shippabledocker/hitchcock3_sample_nodetest .
