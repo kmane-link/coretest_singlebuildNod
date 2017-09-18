@@ -3,7 +3,8 @@ language: node_js
 # Version number
 node_js:
   - 0.12
-
+git:
+   submodules: false
 env: 
     - pull_image_tag="v5.3.1"
     - pull_image_tag="master"
