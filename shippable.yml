@@ -14,6 +14,7 @@ git:
 build:
   pre_ci:
     - docker build -t=shippabledocker/hitchcock3_sample_nodetest .
+    - eval $test
    
   pre_ci_boot:
     image_name: drydock/u14nodall
@@ -23,7 +24,7 @@ build:
   ci:
     - ps -eax
     - ls -al
-    - eval $test
+    
     #- !@#$%^
   post_ci:
      
