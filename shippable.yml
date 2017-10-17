@@ -12,7 +12,8 @@ env:
 
   matrix:
     - M1=ONE
-
+git:
+  submodules: false
 build:
   #pre_ci:
    # - docker build -t=shippabledocker/hitchcock3_sample_node .
