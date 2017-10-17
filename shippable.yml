@@ -16,7 +16,7 @@ git:
    submodules: false
 build:
   pre_ci:
-    - docker build -t=shippabledocker/hitchcock3_sample_node .
+    - docker build -t=shippabledocker/hitchcock3_sample_node:oct17 .
 
   pre_ci_boot:
     image_name: shippabledocker/hitchcock3_sample_node1
@@ -29,8 +29,8 @@ build:
     - ls -al
 
   post_ci:
-    - docker build -t=shippabledocker/hitchcock3_sample_node11 .
-    - docker push shippabledocker/hitchcock3_sample_node11
+    #- docker build -t=shippabledocker/hitchcock3_sample_node11 .
+    - docker push shippabledocker/hitchcock3_sample_node:oct17
 
 integrations:
   hub:
