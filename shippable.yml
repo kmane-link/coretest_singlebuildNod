@@ -73,7 +73,7 @@ build:
     - echo "pipeline job which have public accesss secured links $SECUREDLINKS"
     - echo $AWS_S3_BUCKET
     - echo "jobTriggeredByName=$JOB_TRIGGERED_BY_NAME"
-    - ./env.sh  
+    #- ./env.sh  
     
   #  - docker pull 742038439709.dkr.ecr.us-west-2.amazonaws.com/sample_java:latest
    
