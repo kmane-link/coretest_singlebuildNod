@@ -125,7 +125,7 @@ integrations:
       
   #Quay.io integration    
     - integrationName: ship-quay
-      type: dockerRegistry
+      type: Quay.io
       branches: #Testing the wildcards for branches include
         only:
           - m*
